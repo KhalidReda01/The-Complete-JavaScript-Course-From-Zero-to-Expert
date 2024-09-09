@@ -1,0 +1,89 @@
+/* remove default the margin and padding  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: #1088ad;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 26px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+}
+nav {
+  font-size: 18px;
+  display: block;
+}
+nav a {
+  text-align: center;
+}
+.main-header h1::first-letter {
+  font-style: normal;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
