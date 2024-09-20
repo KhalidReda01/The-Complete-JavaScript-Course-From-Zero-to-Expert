@@ -36,11 +36,11 @@
 // console.log(year);
 // console.log(typeof year);
 
-let age = 25;
-age = 26;
-console.log(age);
-const birthYear = 1998;
-//  birthYear=2000;
-//  const job;
-lastName = "namra";
-console.log(lastName);
+// let age = 25;
+// age = 26;
+// console.log(age);
+// const birthYear = 1998;
+// //  birthYear=2000;
+// //  const job;
+// lastName = "namra";
+// console.log(lastName);
