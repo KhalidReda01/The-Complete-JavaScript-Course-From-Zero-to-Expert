@@ -44,9 +44,7 @@
 // //  const job;
 // lastName = "namra";
 // console.log(lastName);
-// const now = 2024;
-// const ageKhalid = now - 1998;
-// const ageSara = now - 2006;
+
 // console.log(ageKhalid, ageSara);
 // console.log(ageKhalid * 2, ageSara / 10, 2 ** 3);
 
@@ -63,4 +61,14 @@
 // console.log(ageSara >= 18);
 // const isFullAge = ageSara >= 18;
 // console.log(isFullAge);
-// console.log(now - 1998 > now - 2006);
+
+const now = 2024;
+const ageKhalid = now - 1998;
+const ageSara = now - 2006;
+console.log(now - 1998 > now - 2006);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+const averageAge = (ageKhalid + ageSara) / 2;
+console.log(ageKhalid, ageSara, averageAge);
