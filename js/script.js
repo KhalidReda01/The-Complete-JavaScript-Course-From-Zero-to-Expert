@@ -94,16 +94,17 @@ m tall.
 
 // let mass;
 // let height;
-// const markMass = 78;
-// const markHeight = 1.96;
-// const johnMass = 92;
-// const johnHeight = 1.95;
-const markMass = 95;
-const markHeight = 1.88;
-const johnMass = 85;
-const johnHeight = 1.76;
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+// const markMass = 95;
+// const markHeight = 1.88;
+// const johnMass = 85;
+// const johnHeight = 1.76;
 
-const CalcJohnBMI = johnMass / johnHeight ** 2;
 const CalcMarkBMI = markMass / markHeight ** 2;
+const CalcJohnBMI = johnMass / johnHeight ** 2;
 const markHigherBMI = CalcMarkBMI > CalcJohnBMI;
+console.log(CalcMarkBMI, CalcJohnBMI);
 console.log(markHigherBMI);
