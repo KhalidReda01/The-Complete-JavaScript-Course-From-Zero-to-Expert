@@ -17,21 +17,30 @@
 // let myFirstJob = "coder";
 // let myCurrentJob = "teacher";
 // console.log(myFirstJob);
-true;
-let javascriptIsFun = true;
-console.log(javascriptIsFun);
-console.log(typeof javascriptIsFun);
-console.log(typeof true);
-console.log(typeof "khalid");
+// true;
+// let javascriptIsFun = true;
+// console.log(javascriptIsFun);
+// console.log(typeof javascriptIsFun);
+// console.log(typeof true);
+// console.log(typeof "khalid");
 
-javascriptIsFun = "Yes";
-console.log(typeof javascriptIsFun);
-let year;
+// javascriptIsFun = "Yes";
+// console.log(typeof javascriptIsFun);
+// let year;
 
-console.log(year);
-console.log(typeof year);
+// console.log(year);
+// console.log(typeof year);
 
-year = 1991;
+// year = 1991;
 
-console.log(year);
-console.log(typeof year);
+// console.log(year);
+// console.log(typeof year);
+
+let age = 25;
+age = 26;
+console.log(age);
+const birthYear = 1998;
+//  birthYear=2000;
+//  const job;
+lastName = "namra";
+console.log(lastName);
