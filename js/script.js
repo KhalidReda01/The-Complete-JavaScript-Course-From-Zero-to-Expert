@@ -44,23 +44,23 @@
 // //  const job;
 // lastName = "namra";
 // console.log(lastName);
-const now = 2024;
-const ageKhalid = now - 1998;
-const ageSara = now - 2006;
-console.log(ageKhalid, ageSara);
-console.log(ageKhalid * 2, ageSara / 10, 2 ** 3);
+// const now = 2024;
+// const ageKhalid = now - 1998;
+// const ageSara = now - 2006;
+// console.log(ageKhalid, ageSara);
+// console.log(ageKhalid * 2, ageSara / 10, 2 ** 3);
 
-let x = 10 + 5; // 15
-x += 10; // x=x+10 = 25;
-x *= 4; /// x=x*4=100;
-x++; // x=x+1
-x--; //x=x-1
-x--; //x=x-1
-console.log(x);
+// let x = 10 + 5; // 15
+// x += 10; // x=x+10 = 25;
+// x *= 4; /// x=x*4=100;
+// x++; // x=x+1
+// x--; //x=x-1
+// x--; //x=x-1
+// console.log(x);
 
-// comparison operators
-console.log(ageKhalid > ageSara);
-console.log(ageSara >= 18);
-const isFullAge = ageSara >= 18;
-console.log(isFullAge);
-console.log(now - 1998 > now - 2006);
+// // comparison operators
+// console.log(ageKhalid > ageSara);
+// console.log(ageSara >= 18);
+// const isFullAge = ageSara >= 18;
+// console.log(isFullAge);
+// console.log(now - 1998 > now - 2006);
