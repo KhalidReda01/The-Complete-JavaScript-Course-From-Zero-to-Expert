@@ -143,9 +143,44 @@ const johnHeight = 1.95;
 //   console.log(`Jon's BMI ${CalcJohnBMI} is higher than Johnas${CalcMarkBMI}`);
 // }
 
-const inputYear = "1991";
-console.log(inputYear);
-console.log(Number(inputYear) + 18);
-console.log(Number("khalid"));
-console.log(typeof NaN);
-console.log(String(23), 23);
+// const inputYear = "1991";
+// console.log(inputYear);
+// console.log(Number(inputYear) + 18);
+// console.log(Number("khalid"));
+// console.log(typeof NaN);
+// console.log(String(23), 23);
+
+// // type coercion
+// console.log("I  am " + 23 + " Years old ");
+// console.log("23" - "10" - 3);
+// console.log("23" / "2");
+
+// let n = "1" + 1;
+// console.log(n);
+// console.log("9" - "5"); //4
+// console.log("19" - "13" + "17"); //617
+// console.log("19" - "13" + 17); //23
+// console.log("123" < 57); //false
+// console.log(5 + 6 + "4");
+// console.log(5 + 6 + "4" + 9 - 4 - 2); //117
+
+// 5 falsy values:0, '', undefined, null , NAN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Khalid"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 10;
+if (money) {
+  console.log("Don't spend it all ;");
+} else {
+  console.log("You should get a job");
+}
+
+let height;
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is undefined");
+}

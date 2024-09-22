@@ -13,21 +13,23 @@ let populationSecond = 6;
 // // console.log(continent);
 // // console.log(population);
 
-//Lecture Data Types
-const isIsland = false;
-let lang;
-lang = "Arabic";
-// console.log(typeof isIsland);
-// console.log(typeof population);
-// console.log();
-console.log(population < populationSecond);
-// let description = country + " is in " + continent + " and its " + population + " speak " + lang;
-let description = `${country}  is in ${continent}   and its ${population}  speak ${lang} ;`;
+// //Lecture Data Types
+// const isIsland = false;
+// let lang;
+// lang = "Arabic";
+// // console.log(typeof isIsland);
+// // console.log(typeof population);
+// // console.log();
+// console.log(population < populationSecond);
+// // let description = country + " is in " + continent + " and its " + population + " speak " + lang;
+// let description = `${country}  is in ${continent}   and its ${population}  speak ${lang} ;`;
 
-console.log(description);
+// console.log(description);
 
-if (population > 33) {
-  console.log(`${country} is above average`);
-} else {
-  console.log(`${country}'s poulation is ${population - 33} below average`);
-}
+// if (population > 33) {
+//   console.log(`${country} is above average`);
+// } else {
+//   console.log(`${country}'s poulation is ${population - 33} below average`);
+// }
+
+/** Lecture Type conversion and Coercion */
