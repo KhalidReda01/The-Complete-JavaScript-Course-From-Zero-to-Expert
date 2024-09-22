@@ -56,16 +56,16 @@ situation
  * 
  * 
 */
-const numNeighbours = Number(
-  prompt("How many neighbour countries does your country have")
-);
+// const numNeighbours = Number(
+//   prompt("How many neighbour countries does your country have")
+// );
 
-if (numNeighbours == 1) {
-  console.log("Only one border");
-} else if (numNeighbours > 1) {
-  console.log("More than 1 border");
-} else {
-  console.log("no border");
-}
+// if (numNeighbours == 1) {
+//   console.log("Only one border");
+// } else if (numNeighbours > 1) {
+//   console.log("More than 1 border");
+// } else {
+//   console.log("no border");
+// }
 // console.log(typeof numNeighbours);
 // console.log(numNeighbours);
