@@ -98,30 +98,47 @@ m tall.
 // const markHeight = 1.69;
 // const johnMass = 92;
 // const johnHeight = 1.95;
-// const markMass = 95;
-// const markHeight = 1.88;
-// const johnMass = 85;
-// const johnHeight = 1.76;
 
-// const CalcMarkBMI = markMass / markHeight ** 2;
-// const CalcJohnBMI = johnMass / johnHeight ** 2;
-// const markHigherBMI = CalcMarkBMI > CalcJohnBMI;
-// console.log(CalcMarkBMI, CalcJohnBMI);
-// console.log(markHigherBMI);
+// const age = 15;
+// const isOldEnough = age >= 18;
+// if (isOldEnough) {
+//   console.log("Sarah can start driving License 🚗");
+// } else {
+//   const yearsLeft = 19 - age;
+//   console.log(`Sarah is too young . wait another ${yearsLeft} years:)`);
+// }
+// let century;
+// const birthYear = 2012;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+// console.log(century);
+// Coding Challenge #2
+// Use the BMI example from Challenge #1, and the code you already wrote, and
+// improve it.
+// Your tasks:
+// 1. Print a nice output to the console, saying who has the higher BMI. The message
+// is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+// 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+// BMI (28.3) is higher than John's (23.9)!"
+// Hint: Use an if/else statement
+const markMass = 95;
+const markHeight = 1.88;
+const johnMass = 85;
+const johnHeight = 1.76;
 
-const age = 15;
-const isOldEnough = age >= 18;
-if (isOldEnough) {
-  console.log("Sarah can start driving License 🚗");
+const CalcMarkBMI = markMass / markHeight ** 2;
+const CalcJohnBMI = johnMass / johnHeight ** 2;
+const markHigherBMI = CalcMarkBMI > CalcJohnBMI;
+console.log(CalcMarkBMI, CalcJohnBMI);
+console.log(markHigherBMI);
+
+if (CalcMarkBMI > CalcJohnBMI) {
+  console.log(
+    `Mark's BMI ${CalcMarkBMI} is higher than johns BMI ${CalcJohnBMI}`
+  );
 } else {
-  const yearsLeft = 19 - age;
-  console.log(`Sarah is too young . wait another ${yearsLeft} years:)`);
+  console.log(`Jon's BMI ${CalcJohnBMI} is higher than Johnas${CalcMarkBMI}`);
 }
-let century;
-const birthYear = 2012;
-if (birthYear <= 2000) {
-  century = 20;
-} else {
-  century = 21;
-}
-console.log(century);
