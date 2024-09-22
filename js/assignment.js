@@ -1,10 +1,10 @@
 // // Lecture Values and Variables
-// const country = "Egypt";
-// const continent = "Africa";
-// let population = "120 milion";
+const country = "Egypt";
+const continent = "Africa";
+let population = "120 milion";
 // let yourCountrySplitted = true;
 // let countrySecond = "Finland";
-// let populationSecond = "6 million";
+let populationSecond = "6 million";
 // let countPopulation = population / 2;
 // console.log(countPopulation++);
 // console.log(countPopulation);
