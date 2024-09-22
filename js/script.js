@@ -185,22 +185,22 @@ const johnHeight = 1.95;
 //   console.log("Height is undefined");
 // }
 
-const age = "18";
-if (age === 18) console.log("You just became an adult:D (strict)");
-if (age == 18) console.log("You just became an adutlt :D (losse)");
-const favorite = Number(prompt("What's your favourite number"));
+// const age = "18";
+// if (age === 18) console.log("You just became an adult:D (strict)");
+// if (age == 18) console.log("You just became an adutlt :D (losse)");
+// const favorite = Number(prompt("What's your favourite number"));
 
-console.log(favorite);
-console.log(typeof favorite);
+// console.log(favorite);
+// console.log(typeof favorite);
 
-if (favorite === 23) {
-  console.log("Cool 23 is an amazing number");
-} else if (favorite === 7) {
-  console.log("Cool 7 is a cool number!");
-} else if (favorite === 9) {
-  console.log("9 is also a cool number");
-} else {
-  console.log("Number is not 23 or 7 or 9");
-}
+// if (favorite === 23) {
+//   console.log("Cool 23 is an amazing number");
+// } else if (favorite === 7) {
+//   console.log("Cool 7 is a cool number!");
+// } else if (favorite === 9) {
+//   console.log("9 is also a cool number");
+// } else {
+//   console.log("Number is not 23 or 7 or 9");
+// }
 
-if (favorite !== 23) console.log("why not 23?");
+// if (favorite !== 23) console.log("why not 23?");
