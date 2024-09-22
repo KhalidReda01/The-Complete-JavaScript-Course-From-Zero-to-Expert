@@ -205,23 +205,23 @@ const johnHeight = 1.95;
 
 // if (favorite !== 23) console.log("why not 23?");
 
-const hasDriversLicense = true;
-const hasGoodVision = true;
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
 
-console.log(hasDriversLicense && hasGoodVision);
-console.log(hasDriversLicense || hasGoodVision);
-console.log(!hasDriversLicense);
-const shouldDrive = hasDriversLicense && hasGoodVision;
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+// // if (shouldDrive) {
+// //   console.log("Sarah is able to drive! ");
+// // } else {
+// //   console.log("Someone else should drive");
+// // }
+// const isTired = false;
+
+// console.log(hasDriversLicense && hasGoodVision && !isTired);
 // if (shouldDrive) {
 //   console.log("Sarah is able to drive! ");
 // } else {
 //   console.log("Someone else should drive");
 // }
-const isTired = false;
-
-console.log(hasDriversLicense && hasGoodVision && !isTired);
-if (shouldDrive) {
-  console.log("Sarah is able to drive! ");
-} else {
-  console.log("Someone else should drive");
-}

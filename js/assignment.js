@@ -1,7 +1,7 @@
-// // // Lecture Values and Variables
-// const country = "Egypt";
-// const continent = "Africa";
-// let population = 120;
+// // Lecture Values and Variables
+const country = "Egypt";
+const continent = "Africa";
+let population = 120;
 // // let yourCountrySplitted = true;
 // // let countrySecond = "Finland";
 // let populationSecond = 6;
@@ -69,3 +69,27 @@ situation
 // }
 // console.log(typeof numNeighbours);
 // console.log(numNeighbours);
+/**
+ * LECTURE: Logical Operators
+1. Comment out the previous code so the prompt doesn't get in the way
+2. Let's say Sarah is looking for a new country to live in. She wants to live in a 
+country that speaks english, has less than 50 million people and is not an 
+island.
+3. Write an if statement to help Sarah figure out if your country is right for her. 
+You will need to write a condition that accounts for all of Sarah's criteria. Take 
+your time with this, and check part of the solution if necessary.
+4. If yours is the right country, log a string like this: 'You should live in Portugal :)'. If 
+not, log 'Portugal does not meet your criteria :('
+5. Probably your country does not meet all the criteria. So go back and temporarily 
+change some variables in order to make the condition true (unless you live in 
+Canada :D)
+
+ */
+const isEnglishLang = true;
+const isPoulationLarge = false;
+const isICountryIsland = false;
+if (isEnglishLang && !isPoulationLarge && !isICountryIsland) {
+  console.log(`you should live in ${country}`);
+} else {
+  console.log(`Sorry ${country} does not meet all criiteria`);
+}
