@@ -317,10 +317,10 @@ const age = 23;
 // age > -28
 //   ? console.log("I like to drink adult juice")
 //   : console.log("I like to drink water");
-const drink =
-  age > -28
-    ? console.log("I like to drink adult juice")
-    : console.log("I like to drink water");
+// const drink =
+// age > -28
+//   ? console.log("I like to drink adult juice")
+//   : console.log("I like to drink water");
 
 let drink2;
 if (age >= 18) {
@@ -329,3 +329,12 @@ if (age >= 18) {
   drink = "water";
 }
 console.log(drink2);
+
+console.log(`i like  to drink ${age > -28 ? "juice" : "water"}`);
+const country = "Egypt";
+const countryPopulation = 120;
+console.log(
+  `${country}'s population is ${
+    countryPopulation > 33 ? "above" : "below"
+  } average  `
+);
