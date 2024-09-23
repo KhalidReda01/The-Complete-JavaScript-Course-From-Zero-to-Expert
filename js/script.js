@@ -249,27 +249,27 @@ Test data:
  */
 // Solution
 
-// const averageScoreDolphins = (97 + 110 + 101) / 3;
-// const averageScoreKoalas = (109 + 95 + 106) / 3;
-const averageScoreDolphins = 102;
-const averageScoreKoalas = 10;
-console.log(averageScoreDolphins);
-console.log(averageScoreKoalas);
-if (
-  averageScoreDolphins > averageScoreKoalas &&
-  averageScoreDolphins >= 100 &&
-  averageScoreKoalas >= 100
-) {
-  console.log("Dolphins Wins ");
-} else if (averageScoreDolphins < averageScoreKoalas) {
-  console.log("Koals wins");
-} else if (
-  averageScoreDolphins === averageScoreKoalas &&
-  averageScoreDolphins >= 100 &&
-  averageScoreKoalas >= 100
-) {
-  console.log("This is a draw they both have the same averate score");
-} else {
-  console.log("no data");
-}
-console.log("Challege end");
+// // const averageScoreDolphins = (97 + 110 + 101) / 3;
+// // const averageScoreKoalas = (109 + 95 + 106) / 3;
+// const averageScoreDolphins = 102;
+// const averageScoreKoalas = 100;
+// console.log(averageScoreDolphins);
+// console.log(averageScoreKoalas);
+// if (
+//   averageScoreDolphins > averageScoreKoalas &&
+//   averageScoreDolphins >= 100 &&
+//   averageScoreKoalas >= 100
+// ) {
+//   console.log("Dolphins Wins ");
+// } else if (
+//   averageScoreDolphins < averageScoreKoalas &&
+//   averageScoreDolphins >= 100 &&
+//   averageScoreKoalas >= 100
+// ) {
+//   console.log("Koals wins");
+// } else if (averageScoreDolphins === averageScoreKoalas) {
+//   console.log("This is a draw they both have the same averate score");
+// } else {
+//   console.log("no data");
+// }
+// console.log("Challege end");
