@@ -274,29 +274,29 @@ Test data:
 // }
 // console.log("Challege end");
 
-const day = "friday";
-switch (day) {
-  case "monday":
-    console.log("Plan course Struture");
-    console.log("Go to coding meetup");
-    break;
-  case "tuesday":
-    console.log("Prepare theory videos");
-    break;
-  case "wednesday":
-  case "thursday":
-    console.log("Write code examples");
-    break;
-  case "friday":
-    console.log("Record videos");
-    break;
-  case "saturday":
-  case "sunday":
-    console.log("Enjoy the weekend :D");
-    break;
-  default:
-    console.log("Not a valid day!");
-}
+// const day = "friday";
+// switch (day) {
+//   case "monday":
+//     console.log("Plan course Struture");
+//     console.log("Go to coding meetup");
+//     break;
+//   case "tuesday":
+//     console.log("Prepare theory videos");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Write code examples");
+//     break;
+//   case "friday":
+//     console.log("Record videos");
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log("Enjoy the weekend :D");
+//     break;
+//   default:
+//     console.log("Not a valid day!");
+// }
 
 // if (day === "monday") {
 //   console.log("Plan course Structure");
@@ -312,3 +312,20 @@ switch (day) {
 // } else {
 //   console.log("Not a valid day");
 // }
+
+const age = 23;
+// age > -28
+//   ? console.log("I like to drink adult juice")
+//   : console.log("I like to drink water");
+const drink =
+  age > -28
+    ? console.log("I like to drink adult juice")
+    : console.log("I like to drink water");
+
+let drink2;
+if (age >= 18) {
+  drink2 = "juice";
+} else {
+  drink = "water";
+}
+console.log(drink2);
