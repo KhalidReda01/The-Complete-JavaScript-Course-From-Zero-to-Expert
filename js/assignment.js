@@ -1,7 +1,7 @@
 // // Lecture Values and Variables
-const country = "Egypt";
-const continent = "Africa";
-let population = 120;
+// const country = "Egypt";
+// const continent = "Africa";
+// let population = 120;
 // // let yourCountrySplitted = true;
 // // let countrySecond = "Finland";
 // let populationSecond = 6;
@@ -93,3 +93,36 @@ Canada :D)
 // } else {
 //   console.log(`Sorry ${country} does not meet all criiteria`);
 // }
+/*
+LECTURE: The switch Statement
+1. Use a switch statement to log the following string for the given 'language':
+chinese or mandarin: 'MOST number of native speakers!'
+spanish: '2nd place in number of native speakers'
+english: '3rd place'
+hindi: 'Number 4'
+arabic: '5th most spoken language'
+for all other simply log 'Great language too :D'
+*/
+
+const lang = "Arabic";
+switch (lang) {
+  case "chinese":
+  case "mandarin":
+    console.log("Most number of native speakers");
+    break;
+  case "spanish":
+    console.log("2nd place in number of native speaker");
+    break;
+  case "english":
+    console.log("3rd place");
+    break;
+  case "hindi":
+    console.log("number 4");
+    break;
+  case "Arabic":
+    console.log("5th most spoken language");
+    break;
+  default:
+    console.log(`This ${lang} is not a most native speakers`);
+    break;
+}
