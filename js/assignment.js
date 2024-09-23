@@ -85,11 +85,11 @@ change some variables in order to make the condition true (unless you live in
 Canada :D)
 
  */
-const isEnglishLang = true;
-const isPoulationLarge = false;
-const isICountryIsland = false;
-if (isEnglishLang && !isPoulationLarge && !isICountryIsland) {
-  console.log(`you should live in ${country}`);
-} else {
-  console.log(`Sorry ${country} does not meet all criiteria`);
-}
+// const isEnglishLang = true;
+// const isPoulationLarge = false;
+// const isICountryIsland = false;
+// if (isEnglishLang && !isPoulationLarge && !isICountryIsland) {
+//   console.log(`you should live in ${country}`);
+// } else {
+//   console.log(`Sorry ${country} does not meet all criiteria`);
+// }
