@@ -20,16 +20,29 @@
  *
  */
 
-function calcAge1(birthYear) {
-  return 2024 - birthYear;
-}
-// function declaration
-const age1 = calcAge1(1998);
-console.log(age1);
+// function calcAge1(birthYear) {
+//   return 2024 - birthYear;
+// }
+// // function declaration
+// const age1 = calcAge1(1998);
+// console.log(age1);
 
+// // function expression
+// const calcAge2 = function (birthYear) {
+//   return 2024 - birthYear;
+// };
+// const age2 = calcAge2(1998);
+// console.log(age1, age2);
+
+/**
+ * lecture 5 Arrow function
+ *
+ */
 // function expression
 const calcAge2 = function (birthYear) {
   return 2024 - birthYear;
 };
-const age2 = calcAge2(1998);
-console.log(age1, age2);
+// Arrow Function
+const calcAge3 = (birthYear) => 2024 - birthYear;
+const age3 = calcAge3(1998);
+console.log(age3);
