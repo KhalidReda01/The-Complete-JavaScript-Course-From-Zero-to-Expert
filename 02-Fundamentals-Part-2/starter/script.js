@@ -34,13 +34,30 @@
 /**
  * Lecture 5 Arrow function
  */
-const calcAge3 = (birthYear) => 2024 - birthYear;
-const khalid = calcAge3(1998);
-console.log(khalid);
+// const calcAge3 = (birthYear) => 2024 - birthYear;
+// const khalid = calcAge3(1998);
+// console.log(khalid);
 
-const yearsToRetirement = (birthYear, firstName) => {
-  const age = 2024 - birthYear;
-  const retirement = 65 - age;
-  return `${firstName} will retire after ${retirement} years`;
-};
-console.log(yearsToRetirement(1998, "khalid"));
+// const yearsToRetirement = (birthYear, firstName) => {
+//   const age = 2024 - birthYear;
+//   const retirement = 65 - age;
+//   return `${firstName} will retire after ${retirement} years`;
+// };
+// console.log(yearsToRetirement(1998, "khalid"));
+/**
+ * Lecture 6 Functions Calling Other Functions
+ */
+
+// this is the main machine that you put the fruits in it but we need to cut it first
+// the customer dont' care about this part but you do so you will create a cutting
+//??machine
+function fruitCut(fruit) {
+  return fruit * 4;
+}
+function fruitProcessor(apples, oranges) {
+  const appleCut = fruitCut(apples);
+  const orangesCut = fruitCut(oranges);
+  const juice = `Juice with ${appleCut} apples and ${orangesCut} oranges`;
+  return juice;
+}
+console.log(fruitProcessor(4, 3));
