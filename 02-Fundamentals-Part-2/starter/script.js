@@ -1,5 +1,5 @@
 "use strict";
-let hasDriversLicense = false;
-const passTest = (hasDriversLicense = true);
-if (passTest) hasDriversLicense = true;
-if (hasDriversLicense) console.log('I can Drive"');
+let examPassed = false;
+const targetGrade = true;
+if (targetGrade) examPassed = true;
+if (examPassed) console.log(" you passed the exam");
