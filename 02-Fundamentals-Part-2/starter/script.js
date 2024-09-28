@@ -36,9 +36,24 @@
  * 
  */
 
-const calcAge3 = (birthYear, firstName) => {
-  const age = 2024 - birthYear;
-  const retirement = 65 - age;
-  return `${firstName} retires in ${retirement} years}`;
-};
-console.log(calcAge3(1998, "khalid"));
+// const calcAge3 = (birthYear, firstName) => {
+//   const age = 2024 - birthYear;
+//   const retirement = 65 - age;
+//   return `${firstName} retires in ${retirement} years}`;
+// };
+// console.log(calcAge3(1998, "khalid"));
+
+/**
+ Lecture 6 Functions Calling Other Functions
+ */
+function cutFruits(fruit) {
+  return fruit * 4;
+}
+function fruitProcessor(apples, oranges) {
+  const applesCut = cutFruits(apples);
+  const orangesCut = cutFruits(oranges);
+  console.log(applesCut, orangesCut);
+  const juice = `Juice with  ${applesCut} pieces of apples and ${orangesCut} pieces of oranges`;
+  return juice;
+}
+console.log(fruitProcessor(3, 2));
