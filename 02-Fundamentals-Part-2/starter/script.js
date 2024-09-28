@@ -80,6 +80,8 @@ function describePopulation(country, population) {
   const percentage = percentageOfWorld1(population);
   return `${country} has ${population} million people which is about ${percentage}of the world `;
 }
-const china = percentageOfWorld1(1441);
+// const china = percentageOfWorld1(1441);
 console.log(describePopulation("Egypt", 120));
-console.log(china);
+console.log(describePopulation("china", 1440));
+console.log(describePopulation("saudi", 40));
+// console.log(china);
