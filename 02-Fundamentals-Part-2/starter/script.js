@@ -19,15 +19,26 @@
 // const num = Number("23");
 // console.log(num);
 
-const age1 = calcAge1(1998);
-// function declartion
-function calcAge1(birthYear) {
-  return 2024 - birthYear;
-}
-console.log(age1);
+// const age1 = calcAge1(1998);
+// // function declartion
+// function calcAge1(birthYear) {
+//   return 2024 - birthYear;
+// }
+// console.log(age1);
 
-const age2 = calcAge2(1998);
-const calcAge2 = function (birthYear) {
-  return 2024 - birthYear;
+// const age2 = calcAge2(1998);
+// const calcAge2 = function (birthYear) {
+//   return 2024 - birthYear;
+// };
+// console.log(age1, age2);
+/**
+ Lecture 5 Arrow  function
+ * 
+ */
+
+const calcAge3 = (birthYear, firstName) => {
+  const age = 2024 - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years}`;
 };
-console.log(age1, age2);
+console.log(calcAge3(1998, "khalid"));
