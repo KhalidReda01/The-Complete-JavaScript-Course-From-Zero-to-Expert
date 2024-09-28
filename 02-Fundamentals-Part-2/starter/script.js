@@ -18,15 +18,29 @@
 // console.log(appleOrangeJuice);
 
 // function declartion vs function expression
-function calcAge1(birthYear) {
-  return 2024 - birthYear;
-}
-const age1 = calcAge1(1998);
-console.log(age1);
+// function calcAge1(birthYear) {
+//   return 2024 - birthYear;
+// }
+// const age1 = calcAge1(1998);
+// console.log(age1);
 
-// function expression
-const calcAge2 = function (birthYear) {
-  return 2024 - birthYear;
+// // function expression
+// const calcAge2 = function (birthYear) {
+//   return 2024 - birthYear;
+// };
+// const age2 = calcAge2(1998);
+// console.log(age1, age2);
+
+/**
+ * Lecture 5 Arrow function
+ */
+const calcAge3 = (birthYear) => 2024 - birthYear;
+const khalid = calcAge3(1998);
+console.log(khalid);
+
+const yearsToRetirement = (birthYear, firstName) => {
+  const age = 2024 - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} will retire after ${retirement} years`;
 };
-const age2 = calcAge2(1998);
-console.log(age1, age2);
+console.log(yearsToRetirement(1998, "khalid"));
