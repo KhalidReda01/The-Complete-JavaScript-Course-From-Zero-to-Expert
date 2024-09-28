@@ -1,8 +1,15 @@
-"use strict";
+function logger() {
+  console.log("my name is khalid");
+}
 
-let hasDriversLicense = false;
-const passTest = true;
-if (passTest) hasDriversLicense = true;
-
-if (hasDriversLicense) console.log("I can drive");
-// const private = "audio";
+// running the function invoking / calling the function
+logger();
+logger();
+logger();
+function fruitProcessor(apples, oranges) {
+  console.log(apples, oranges);
+  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
+const applesJuice = fruitProcessor(5, 0);
+console.log(applesJuice);
