@@ -1,5 +1,7 @@
 # strict mode 
 
+make us write secure javacript code
+
 we use it to avoid some kind of erros I as see here
 
 for example
@@ -20,4 +22,9 @@ if (hasDriversLicense) console.log("I can drive");
 
 - if you have typo error like this example if you missed the s letter at the variable hasDriverlicense you intentionly mistyped it to see the error
 - secod if you used perserved names like private or if  interface 
+- 
+
+
+
+MDN
 
