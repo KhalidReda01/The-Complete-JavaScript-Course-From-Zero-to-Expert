@@ -88,12 +88,30 @@ the same populations)
 /**
  * UIIDs write anything using function
  */
-// you need to study algothims datastructures you need to think in logic
-const checkWudoo(wudoo){
-  console.log(`you are on wudoo`)
-}
-const PrayTimes = function (wudoo, mosque) {
-  const onWudoo=checkWudoo(wudoo)
-  const prayReady=true
-return prayReady
-};
+// // you need to study algothims datastructures you need to think in logic
+// const checkWudoo(wudoo){
+//   console.log(`you are on wudoo`)
+// }
+// const PrayTimes = function (wudoo, mosque) {
+//   const onWudoo=checkWudoo(wudoo)
+//   const prayReady=true
+// return prayReady
+// };
+
+const car1 = "tyoto";
+const car2 = "hudayi";
+const car3 = "vk";
+console.log(car1);
+const cars = ["tyoto", "hundayi", "vk"];
+console.log(cars);
+cars[2] = "chefro";
+console.log(cars);
+const newCars = new Array("car1", "car2");
+console.log(newCars);
+
+// function addCarNumbers(carType) {
+//   return carType + "a nice number";
+// }
+
+
+const name=[car1,'model',202-3]
