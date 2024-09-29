@@ -58,13 +58,13 @@ the same populations)
 // 1. Recreate the last assignment, but this time create an arrow function called
 // 'percentageOfWorld3
 //  */
-// const percentageOfWorld1 = (population) => (population / 7900) * 100;
-// // const China1 = percentageOfWorld3(1441);
-// // const Egypt2 = percentageOfWorld3(120);
-// // const India3 = percentageOfWorld3(1300);
-// // console.log(China, Egypt, India);
-// // console.log(China1, Egypt2, India3);
-// /**
+const percentageOfWorld1 = (population) => (population / 7900) * 100;
+// const China1 = percentageOfWorld3(1441);
+// const Egypt2 = percentageOfWorld3(120);
+// const India3 = percentageOfWorld3(1300);
+// console.log(China, Egypt, India);
+// console.log(China1, Egypt2, India3);
+/**
 //  * Lecture 6 Functions Calling Other Functions
 //  *
 //  * . Create a function called 'describePopulation'. Use the function type you
@@ -76,42 +76,36 @@ the same populations)
 // 3. Call 'describePopulation' with data for 3 countries of your choice
 //  */
 
-// function describePopulation(country, population) {
-//   const percentage = percentageOfWorld1(population);
-//   return `${country} has ${population} million people which is about ${percentage}of the world `;
-// }
-// // const china = percentageOfWorld1(1441);
-// console.log(describePopulation("Egypt", 120));
-// console.log(describePopulation("china", 1440));
-// console.log(describePopulation("saudi", 40));
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld1(population);
+  return `${country} has ${population} million people which is about ${percentage}of the world `;
+}
+// const china = percentageOfWorld1(1441);
+console.log(describePopulation("Egypt", 120));
+console.log(describePopulation("china", 1440));
+console.log(describePopulation("saudi", 40));
 // console.log(china);
 /**
- * UIIDs write anything using function
+ * UIIDs
+ * LECTURE: Introduction to Arrays
+1. Create an array containing 4 population values of 4 countries of your choice. Done
+You may use the values you have been using previously. Store this array into a
+variable called 'populations'
+2. Log to the console whether the array has 4 elements or not (true or false) Done
+3. Create an array called 'percentages' containing the percentages of the
+world population for these 4 population values. Use the function
+'percentageOfWorld1' that you created earlier to compute the 4
+percentage values
  */
-// // you need to study algothims datastructures you need to think in logic
-// const checkWudoo(wudoo){
-//   console.log(`you are on wudoo`)
-// }
-// const PrayTimes = function (wudoo, mosque) {
-//   const onWudoo=checkWudoo(wudoo)
-//   const prayReady=true
-// return prayReady
+
 // };
 
-const car1 = "tyoto";
-const car2 = "hudayi";
-const car3 = "vk";
-console.log(car1);
-const cars = ["tyoto", "hundayi", "vk"];
-console.log(cars);
-cars[2] = "chefro";
-console.log(cars);
-const newCars = new Array("car1", "car2");
-console.log(newCars);
-
-// function addCarNumbers(carType) {
-//   return carType + "a nice number";
-// }
-
-
-const name=[car1,'model',202-3]
+const populationValue = [120, 1330, 10, 30];
+console.log(populationValue.length >= 4);
+const percentages = [
+  percentageOfWorld1(populationValue[0]),
+  percentageOfWorld1(populationValue[1]),
+  percentageOfWorld1(populationValue[2]),
+  percentageOfWorld1(populationValue[3]),
+];
+console.log(percentages);
