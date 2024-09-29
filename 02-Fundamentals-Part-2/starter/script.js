@@ -46,14 +46,34 @@
 /**
  Lecture 6 Functions Calling Other Functions
  */
-function cutFruits(fruit) {
-  return fruit * 4;
-}
-function fruitProcessor(apples, oranges) {
-  const applesCut = cutFruits(apples);
-  const orangesCut = cutFruits(oranges);
-  console.log(applesCut, orangesCut);
-  const juice = `Juice with  ${applesCut} pieces of apples and ${orangesCut} pieces of oranges`;
-  return juice;
-}
-console.log(fruitProcessor(3, 2));
+// function cutFruits(fruit) {
+//   return fruit * 4;
+// }
+// function fruitProcessor(apples, oranges) {
+//   const applesCut = cutFruits(apples);
+//   const orangesCut = cutFruits(oranges);
+//   console.log(applesCut, orangesCut);
+//   const juice = `Juice with  ${applesCut} pieces of apples and ${orangesCut} pieces of oranges`;
+//   return juice;
+// }
+// console.log(fruitProcessor(3, 2));
+/**
+ * Lecture 7 Reviweing Functions
+ */
+
+const calcAge = function (birthYear) {
+  return 2024 - birthYear;
+};
+const calcRetiredAge = (birthYear, firstName) => {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years}`);
+    return retirement;
+  } else {
+    return -1;
+  }
+  //   return `${firstName} retires in ${retirement} years}`;
+};
+console.log(calcRetiredAge(1998, "khalid"));
+console.log(calcRetiredAge(1950, "Hazem"));
