@@ -51,13 +51,32 @@
 // this is the main machine that you put the fruits in it but we need to cut it first
 // the customer dont' care about this part but you do so you will create a cutting
 //??machine
-function fruitCut(fruit) {
-  return fruit * 4;
-}
-function fruitProcessor(apples, oranges) {
-  const appleCut = fruitCut(apples);
-  const orangesCut = fruitCut(oranges);
-  const juice = `Juice with ${appleCut} apples and ${orangesCut} oranges`;
-  return juice;
-}
-console.log(fruitProcessor(4, 3));
+// function fruitCut(fruit) {
+//   return fruit * 4;
+// }
+// function fruitProcessor(apples, oranges) {
+//   const appleCut = fruitCut(apples);
+//   const orangesCut = fruitCut(oranges);
+//   const juice = `Juice with ${appleCut} apples and ${orangesCut} oranges`;
+//   return juice;
+// }
+// console.log(fruitProcessor(4, 3));
+
+/**
+ * Lecture 7 Reviweing Functions
+ */
+const calcAge = function (birthYear) {
+  return 2024 - birthYear;
+};
+const yearsToRetirement = (birthYear, firstName) => {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+  if (birthYear > 0) {
+    return retirement;
+  } else {
+    return -1;
+  }
+  // return `${firstName} will retire after ${retirement} years`;
+};
+console.log(yearsToRetirement(1998, "khalid"));
+console.log(yearsToRetirement(1950, "khalid"));
