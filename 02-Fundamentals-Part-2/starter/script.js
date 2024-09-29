@@ -85,28 +85,42 @@
 /**
  * Lecture 9 Introduction to Arrays
  */
-const name1 = "khalid";
-const name2 = "Reda";
-const name3 = "Ahmed";
-const names = ["khalid", "Reda", "Ahmed"];
-const names2 = new Array("khald", "ahmed", "reda");
-console.log(names2);
-console.log(names2[0]);
-console.log(names2[1]);
-console.log(names2[names.length - 1]);
+// const name1 = "khalid";
+// const name2 = "Reda";
+// const name3 = "Ahmed";
+// const names = ["khalid", "Reda", "Ahmed"];
+// const names2 = new Array("khald", "ahmed", "reda");
+// console.log(names2);
+// console.log(names2[0]);
+// console.log(names2[1]);
+// console.log(names2[names.length - 1]);
 
-// Exercise
-const years = [1992, 1993, 2021, 2023];
-const calcAge = function (birthYear) {
-  return 2024 - birthYear;
-};
+// // Exercise
+// const years = [1992, 1993, 2021, 2023];
+// const calcAge = function (birthYear) {
+//   return 2024 - birthYear;
+// };
 
-const ages1 = calcAge(years[0]);
-const ages2 = calcAge(years[1]);
-const ages3 = calcAge(years[2]);
-console.log(ages1, ages2, ages3);
-console.log(
-  calcAge(years[0]),
-  calcAge(years[1]),
-  calcAge(years[years.length - 2])
-);
+// const ages1 = calcAge(years[0]);
+// const ages2 = calcAge(years[1]);
+// const ages3 = calcAge(years[2]);
+// console.log(ages1, ages2, ages3);
+// console.log(
+//   calcAge(years[0]),
+//   calcAge(years[1]),
+//   calcAge(years[years.length - 2])
+// );
+const friends = ["khalid", "Ahmed", "Ibrahim"];
+// add element to an end of array
+
+console.log(friends);
+friends.push("loda");
+console.log(friends);
+friends.pop();
+console.log(friends);
+friends.unshift("Kareem");
+console.log(friends.includes("khalid"));
+friends.shift();
+console.log(friends.shift());
+
+console.log(friends);
