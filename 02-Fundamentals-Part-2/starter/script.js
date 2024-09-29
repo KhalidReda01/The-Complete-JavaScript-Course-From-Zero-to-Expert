@@ -61,19 +61,57 @@
  * Lecture 7 Reviweing Functions
  */
 
-const calcAge = function (birthYear) {
+// const calcAge = function (birthYear) {
+//   return 2024 - birthYear;
+// };
+// const calcRetiredAge = (birthYear, firstName) => {
+//   const age = calcAge(birthYear);
+//   const retirement = 65 - age;
+//   if (retirement > 0) {
+//     console.log(`${firstName} retires in ${retirement} years}`);
+//     return retirement;
+//   } else {
+//     return -1;
+//   }
+//   //   return `${firstName} retires in ${retirement} years}`;
+// };
+// console.log(calcRetiredAge(1998, "khalid"));
+// console.log(calcRetiredAge(1950, "Hazem"));
+
+/**
+ * Lecture 9 Introduction to Arrays
+ */
+const friend1 = "khalid";
+const friend2 = "Ahmed";
+const friend3 = "Ibrahim";
+const friends = ["khalid", "ahmed", "Ibrahim"];
+console.log(friends);
+
+// const years=[1998,2000,2012,2023]
+const years = new Array(1998, 2000, 2012, 2023);
+console.log(years);
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends[friends.length - 1]);
+friends[2] = "reda";
+console.log(friends);
+const firstName = "Youusef";
+const yussef = [firstName, 2024 - 2012, friends];
+console.log(yussef.length);
+
+// Exercise
+
+const calcAge2 = function (birthYear) {
   return 2024 - birthYear;
 };
-const calcRetiredAge = (birthYear, firstName) => {
-  const age = calcAge(birthYear);
-  const retirement = 65 - age;
-  if (retirement > 0) {
-    console.log(`${firstName} retires in ${retirement} years}`);
-    return retirement;
-  } else {
-    return -1;
-  }
-  //   return `${firstName} retires in ${retirement} years}`;
-};
-console.log(calcRetiredAge(1998, "khalid"));
-console.log(calcRetiredAge(1950, "Hazem"));
+const years2 = [1998, 2000, 2012, 2023];
+const age1 = calcAge2(years[0]);
+const age2 = calcAge2(years[1]);
+const age3 = calcAge2(years[2]);
+
+console.log([age1, age2, age3]);
+console.log([
+  calcAge2(years[0]),
+  calcAge2(years[1]),
+  calcAge2(years[years.length - 2]),
+]);
