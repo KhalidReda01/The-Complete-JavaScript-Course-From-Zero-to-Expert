@@ -146,35 +146,55 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 // § Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
  */
 
-const calcAverage = (score1, score2, score3) => {
-  return (score1 + score2 + score3) / 3;
-};
+// const calcAverage = (score1, score2, score3) => {
+//   return (score1 + score2 + score3) / 3;
+// };
 
-let dolphinsAverage = calcAverage(44, 23, 71);
-let koalasAverage = calcAverage(65, 54, 49);
-// const dolphinsAverage = calcAverage(85, 54, 41);
-// const koalasAverage = calcAverage(23, 34, 27);
-console.log(dolphinsAverage);
-console.log(koalasAverage);
-const checkWinner = (dolphinsAverage, koalasAverage) => {
-  if (dolphinsAverage > koalasAverage && dolphinsAverage > koalasAverage * 2) {
-    console.log(
-      `the winner is Dolphin his score ${dolphinsAverage} vs ${koalasAverage}`
-    );
-  } else if (
-    koalasAverage > dolphinsAverage &&
-    koalasAverage > dolphinsAverage * 2
-  ) {
-    console.log(
-      `the winner is  kolas temam his score ${koalasAverage} vs ${dolphinsAverage}`
-    );
-  } else {
-    console.log("no one wins");
-  }
-};
-checkWinner(dolphinsAverage, koalasAverage);
-// test 2
-dolphinsAverage = calcAverage(85, 54, 41);
-koalasAverage = calcAverage(23, 34, 27);
+// let dolphinsAverage = calcAverage(44, 23, 71);
+// let koalasAverage = calcAverage(65, 54, 49);
+// // const dolphinsAverage = calcAverage(85, 54, 41);
+// // const koalasAverage = calcAverage(23, 34, 27);
+// console.log(dolphinsAverage);
+// console.log(koalasAverage);
+// const checkWinner = (dolphinsAverage, koalasAverage) => {
+//   if (dolphinsAverage > koalasAverage && dolphinsAverage > koalasAverage * 2) {
+//     console.log(
+//       `the winner is Dolphin his score ${dolphinsAverage} vs ${koalasAverage}`
+//     );
+//   } else if (
+//     koalasAverage > dolphinsAverage &&
+//     koalasAverage > dolphinsAverage * 2
+//   ) {
+//     console.log(
+//       `the winner is  kolas temam his score ${koalasAverage} vs ${dolphinsAverage}`
+//     );
+//   } else {
+//     console.log("no one wins");
+//   }
+// };
+// checkWinner(dolphinsAverage, koalasAverage);
+// // test 2
+// dolphinsAverage = calcAverage(85, 54, 41);
+// koalasAverage = calcAverage(23, 34, 27);
 
-checkWinner(dolphinsAverage, koalasAverage);
+// checkWinner(dolphinsAverage, koalasAverage);
+/**
+ * Lecture 9 Introduction to Arrays
+ */
+
+const friend1 = "khalid";
+const friend2 = "steven";
+const friend3 = "peter";
+const friends = ["Michael", "steven", "Peter"];
+console.log(friends);
+const years = new Array(1888, 1000, 1222, 2020);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
