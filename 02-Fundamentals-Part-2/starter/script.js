@@ -145,3 +145,31 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 // § Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
 // § Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
  */
+
+const calcAverage = (score1, score2, score3) => {
+  return (score1 + score2 + score3) / 3;
+};
+
+const dolphinsAverage = calcAverage(44, 23, 71);
+const koalasAverage = calcAverage(65, 54, 49);
+// const dolphinsAverage = calcAverage(85, 54, 41);
+// const koalasAverage = calcAverage(23, 34, 27);
+console.log(dolphinsAverage);
+console.log(koalasAverage);
+const checkWinner = (dolphinsAverage, koalasAverage) => {
+  if (dolphinsAverage > koalasAverage && dolphinsAverage > koalasAverage * 2) {
+    console.log(
+      `the winner is Dolphin his score ${dolphinsAverage} vs ${koalasAverage}`
+    );
+  } else if (
+    koalasAverage > dolphinsAverage &&
+    koalasAverage > dolphinsAverage * 2
+  ) {
+    console.log(
+      `the winner is  kolas temam his score ${koalasAverage} vs ${dolphinsAverage}`
+    );
+  } else {
+    console.log("no one wins");
+  }
+};
+checkWinner(dolphinsAverage, koalasAverage);
