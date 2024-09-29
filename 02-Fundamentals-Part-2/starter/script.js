@@ -150,8 +150,8 @@ const calcAverage = (score1, score2, score3) => {
   return (score1 + score2 + score3) / 3;
 };
 
-const dolphinsAverage = calcAverage(44, 23, 71);
-const koalasAverage = calcAverage(65, 54, 49);
+let dolphinsAverage = calcAverage(44, 23, 71);
+let koalasAverage = calcAverage(65, 54, 49);
 // const dolphinsAverage = calcAverage(85, 54, 41);
 // const koalasAverage = calcAverage(23, 34, 27);
 console.log(dolphinsAverage);
@@ -172,4 +172,9 @@ const checkWinner = (dolphinsAverage, koalasAverage) => {
     console.log("no one wins");
   }
 };
+checkWinner(dolphinsAverage, koalasAverage);
+// test 2
+dolphinsAverage = calcAverage(85, 54, 41);
+koalasAverage = calcAverage(23, 34, 27);
+
 checkWinner(dolphinsAverage, koalasAverage);
