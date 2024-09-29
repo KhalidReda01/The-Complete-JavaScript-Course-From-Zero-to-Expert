@@ -74,13 +74,18 @@
  * Lecture 7 Reviewing Functions
  */
 const calcAge = function (birthYear) {
-  return 2037 - birthYear;
+  return 2024 - birthYear;
 };
 const yearsUntilRetirement = function (birthYear, firstName) {
   const age = calcAge(birthYear);
   const retirement = 65 - age;
+  if (retirement > 0) {
+    return retirement;
+  } else {
+    return -1;
+  }
   // return retirement;
-  return `${firstName} retires in ${retirement} years`;
+  // return `${firstName} retires in ${retirement} years`;
 };
 console.log(yearsUntilRetirement(1998, "khalid"));
-console.log(yearsUntilRetirement(1988, "Youssef"));
+console.log(yearsUntilRetirement(1970, "Youssef"));
