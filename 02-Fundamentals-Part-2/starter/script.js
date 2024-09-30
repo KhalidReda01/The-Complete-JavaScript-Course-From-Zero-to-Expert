@@ -259,21 +259,36 @@ Your tasks:
 Test data: 125, 555 and 44
  */
 // const bill = 301;
-let tip;
+// let tip;
 
-console.log(tip);
-function calTip(bill) {
-  // if (bill >= 50 && bill <= 300) {
-  //   return (tip = 0.15 * bill);
-  // } else {
-  //   return (tip = 0.2 * bill);
-  // }
-  return bill >= 50 && bill <= 300 ? (tip = 0.15 * bill) : (tip = 0.2 * bill);
-}
+// console.log(tip);
+// function calTip(bill) {
+//   // if (bill >= 50 && bill <= 300) {
+//   //   return (tip = 0.15 * bill);
+//   // } else {
+//   //   return (tip = 0.2 * bill);
+//   // }
+//   return bill >= 50 && bill <= 300 ? (tip = 0.15 * bill) : (tip = 0.2 * bill);
+// }
 
-// const bills = [100, 200, 300, 400];
-const bills = [125, 55, 44, 400];
-const tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
-console.log(calTip(bills[2]));
-const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(total);
+// // const bills = [100, 200, 300, 400];
+// const bills = [125, 55, 44, 400];
+// const tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
+// console.log(calTip(bills[2]));
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(total);
+
+const khalidArray = [
+  "khalid",
+  "reda",
+  2024 - 1998,
+  "teacher",
+  ["Ibrahim", "ahmed", "micael"],
+];
+const khalid = {
+  firstName: "khalid",
+  lastName: "Reda",
+  age: 2024 - 1998,
+  job: "Developer",
+  friends: ["Ibrahim", "Ahmed", "Micael"],
+};
