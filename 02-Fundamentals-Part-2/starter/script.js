@@ -117,19 +117,47 @@
 // ]);
 
 // add element
-const friends = ["khalid", "Reda", "Ahmed", "abdo"];
-// add element at the end of array
-const friendsPushed = friends.push("abdelaziz");
-console.log(friends);
-console.log(friendsPushed);
-friends.pop();
-console.log(friends);
-// add at the start of the array
-friends.unshift("hoda");
-console.log(friends);
-friends.shift();
-friends.shift();
-friends.shift();
-console.log(friends);
-console.log(friends.indexOf("Ahmed"));
-console.log(friends.includes("Ahmed"));
+// const friends = ["khalid", "Reda", "Ahmed", "abdo"];
+// // add element at the end of array
+// const friendsPushed = friends.push("abdelaziz");
+// console.log(friends);
+// console.log(friendsPushed);
+// friends.pop();
+// console.log(friends);
+// // add at the start of the array
+// friends.unshift("hoda");
+// console.log(friends);
+// friends.shift();
+// friends.shift();
+// friends.shift();
+// console.log(friends);
+// console.log(friends.indexOf("Ahmed"));
+// console.log(friends.includes("Ahmed"));
+
+const khalid = {
+  firstName: "khalid",
+  lastName: "reda",
+  age: 2024 - 1998,
+  job: "Developer",
+  friends: ["Ibrahim", "Ahmed", "Micael"],
+};
+const nameKey = "Name";
+console.log(khalid["first" + nameKey]);
+// dot notation vs Brakcet notation
+
+const interestedIn = prompt(
+  "what do you want to know about khalid?chose between firstName lastName age job friends"
+);
+console.log(interestedIn);
+if (interestedIn) {
+  console.log(khalid[interestedIn]);
+} else {
+  console.log(
+    "Wrong request pease choose between firstName lastName,jobs and friends"
+  );
+}
+// challenge
+// Khalid has a 3 frineds and his best frined is called Ahmed
+console.log(
+  `${khalid.firstName} has a ${khalid.friends.length} friends nand his best friend is ${khalid.friends[0]}`
+);
