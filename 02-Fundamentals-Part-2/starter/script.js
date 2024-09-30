@@ -291,7 +291,16 @@ const khalid = {
   age: 2024 - 1998,
   job: "Developer",
   friends: ["Ibrahim", "Ahmed", "Micael"],
+  hasDriversLicense: true,
+  calAge: function (birthYear) {
+    return 2024 - birthYear;
+  },
 };
+console.log(khalid.calAge(1998));
+console.log(khalid["calAge"](1998));
+// const calAge= function (birthYear) {
+//   return 2022 - birthYear;
+// }
 // console.log(khalid);
 // console.log(khalid.lastName);
 // console.log(khalid["lastName"]);
