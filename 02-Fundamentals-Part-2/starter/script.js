@@ -137,27 +137,42 @@
 const khalid = {
   firstName: "khalid",
   lastName: "reda",
-  age: 2024 - 1998,
+  birthYear: 1998,
   job: "Developer",
+  hasDrivingLicense: true,
   friends: ["Ibrahim", "Ahmed", "Micael"],
+  // calcAge: function () {
+  //   return 2024 - this.birthYear;
+  // },
+  calcAge: function () {
+    console.log(this);
+    return (this.age = 2024 - this.birthYear);
+  },
+  getSummary:(){
+    this.getSummary=`${this.firstName} is a ${this.calcAge()} years old ${this.job} he has ${this.hasDrivingLicense? 'a': 'no'} driver's license`
+  }
 };
-const nameKey = "Name";
-console.log(khalid["first" + nameKey]);
-// dot notation vs Brakcet notation
+console.log(khalid.calcAge());
+console.log(khalid.calcAge());
+console.log(khalid.calcAge());
+console.log(khalid.calcAge());
+// const nameKey = "Name";
+// console.log(khalid["first" + nameKey]);
+// // dot notation vs Brakcet notation
 
-const interestedIn = prompt(
-  "what do you want to know about khalid?chose between firstName lastName age job friends"
-);
-console.log(interestedIn);
-if (interestedIn) {
-  console.log(khalid[interestedIn]);
-} else {
-  console.log(
-    "Wrong request pease choose between firstName lastName,jobs and friends"
-  );
-}
-// challenge
-// Khalid has a 3 frineds and his best frined is called Ahmed
-console.log(
-  `${khalid.firstName} has a ${khalid.friends.length} friends nand his best friend is ${khalid.friends[0]}`
-);
+// const interestedIn = prompt(
+//   "what do you want to know about khalid?chose between firstName lastName age job friends"
+// );
+// console.log(interestedIn);
+// if (interestedIn) {
+//   console.log(khalid[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request pease choose between firstName lastName,jobs and friends"
+//   );
+// }
+// // challenge
+// // Khalid has a 3 frineds and his best frined is called Ahmed
+// console.log(
+//   `${khalid.firstName} has a ${khalid.friends.length} friends nand his best friend is ${khalid.friends[0]}`
+// );
