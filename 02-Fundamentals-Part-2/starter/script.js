@@ -304,3 +304,14 @@ const interestedIn = prompt(
   "what do you want to know about Khalid ? chose between firstName,lastName,age,job,friends"
 );
 console.log(khalid[interestedIn]);
+
+if (khalid[interestedIn]) {
+  console.log(khalid[interestedIn]);
+} else {
+  console.log(
+    "Wrong request choose between firstName,lastName,age,job and friends"
+  );
+}
+khalid.location = "Egypt";
+khalid["twitter"] = "#khalidNamra";
+console.log(khalid);
