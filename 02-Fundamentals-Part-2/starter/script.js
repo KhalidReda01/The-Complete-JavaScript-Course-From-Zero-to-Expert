@@ -288,16 +288,21 @@ Test data: 125, 555 and 44
 const khalid = {
   firstName: "khalid",
   lastName: "Reda",
-  age: 2024 - 1998,
+  birthYear: 2024 - 1998,
   job: "Developer",
   friends: ["Ibrahim", "Ahmed", "Micael"],
   hasDriversLicense: true,
-  calAge: function (birthYear) {
-    return 2024 - birthYear;
+  // calAge: function (birthYear) {
+  //   return 2024 - birthYear;
+  // },
+  hasDriversLicense: true,
+  calAge: function () {
+    console.log(this);
+    return 2024 - this.birthYear;
   },
 };
-console.log(khalid.calAge(1998));
-console.log(khalid["calAge"](1998));
+console.log(khalid.calAge());
+// console.log(khalid["calAge"]());
 // const calAge= function (birthYear) {
 //   return 2022 - birthYear;
 // }
