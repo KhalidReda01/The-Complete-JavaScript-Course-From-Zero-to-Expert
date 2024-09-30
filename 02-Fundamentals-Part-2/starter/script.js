@@ -278,13 +278,13 @@ Test data: 125, 555 and 44
 // const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 // console.log(total);
 
-const khalidArray = [
-  "khalid",
-  "reda",
-  2024 - 1998,
-  "teacher",
-  ["Ibrahim", "ahmed", "micael"],
-];
+// const khalidArray = [
+//   "khalid",
+//   "reda",
+//   2024 - 1998,
+//   "teacher",
+//   ["Ibrahim", "ahmed", "micael"],
+// ];
 const khalid = {
   firstName: "khalid",
   lastName: "Reda",
@@ -292,3 +292,9 @@ const khalid = {
   job: "Developer",
   friends: ["Ibrahim", "Ahmed", "Micael"],
 };
+console.log(khalid);
+console.log(khalid.lastName);
+console.log(khalid["lastName"]);
+const nameKey = "Name";
+console.log(khalid["first" + nameKey]);
+console.log(khalid["last" + nameKey]);
