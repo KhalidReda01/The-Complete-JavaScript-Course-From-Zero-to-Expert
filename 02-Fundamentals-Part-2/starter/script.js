@@ -110,17 +110,34 @@
 //   calcAge(years[1]),
 //   calcAge(years[years.length - 2])
 // );
-const friends = ["khalid", "Ahmed", "Ibrahim"];
-// add element to an end of array
+// const friends = ["khalid", "Ahmed", "Ibrahim"];
+// // add element to an end of array
 
-console.log(friends);
-friends.push("loda");
-console.log(friends);
-friends.pop();
-console.log(friends);
-friends.unshift("Kareem");
-console.log(friends.includes("khalid"));
-friends.shift();
-console.log(friends.shift());
+// console.log(friends);
+// friends.push("loda");
+// console.log(friends);
+// friends.pop();
+// console.log(friends);
+// friends.unshift("Kareem");
+// console.log(friends.includes("khalid"));
+// friends.shift();
+// console.log(friends.shift());
 
-console.log(friends);
+// console.log(friends);
+const khalid = {
+  firstName: "Khalid",
+  lastName: "Reda",
+  age: 2024 - 1998,
+  job: "Developer",
+  friends: ["Ibrahim", "Ahmed", "Micael"],
+};
+console.log(khalid);
+const interestedIn = prompt(
+  "what do you want to know about Khalid choose firstName ,lastName, age, job ,friends"
+);
+
+if (interestedIn) {
+  console.log(khalid[interestedIn], "strange");
+} else {
+  console.log("plese write a proper value choose a propper one");
+}
