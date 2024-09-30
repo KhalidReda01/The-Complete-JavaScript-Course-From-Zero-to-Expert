@@ -127,17 +127,34 @@
 const khalid = {
   firstName: "Khalid",
   lastName: "Reda",
-  age: 2024 - 1998,
+  birthYear: 1998,
   job: "Developer",
   friends: ["Ibrahim", "Ahmed", "Micael"],
+  hasDrivingLicense: false,
+  ageCalc: function () {
+    // console.log(this.age);
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return (this.summary = `${
+      this.firstName
+    } is a ${this.ageCalc()} years old and he ${
+      this.hasDrivingLicense ? "can drive" : "can not drive"
+    }`);
+  },
 };
-console.log(khalid);
-const interestedIn = prompt(
-  "what do you want to know about Khalid choose firstName ,lastName, age, job ,friends"
-);
+console.log(khalid.ageCalc());
+console.log(khalid.getSummary());
+console.log(khalid.getSummary());
+// console.log(khalid.age);
+// console.log(khalid);
+// const interestedIn = prompt(
+//   "what do you want to know about Khalid choose firstName ,lastName, age, job ,friends"
+// );
 
-if (interestedIn) {
-  console.log(khalid[interestedIn], "strange");
-} else {
-  console.log("plese write a proper value choose a propper one");
-}
+// if (interestedIn) {
+//   console.log(khalid[interestedIn], "strange");
+// } else {
+//   console.log("plese write a proper value choose a propper one");
+// }
