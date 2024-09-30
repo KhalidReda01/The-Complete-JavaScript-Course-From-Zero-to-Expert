@@ -306,9 +306,9 @@ const khalid = {
   },
   getSummary: function () {
     console.log("test");
-    this.getSummary = `${this.firstName} is a ${2024 - this.birthYear} ${
+    this.getSummary = `${this.firstName} is a ${this.calcAge()} years old ${
       this.job
-    } if he has a drive license ${this.hasDriversLicense}`;
+    } he has ${this.hasDriversLicense ? "a" : "no"} drivers's license`;
 
     return this.getSummary;
   },
