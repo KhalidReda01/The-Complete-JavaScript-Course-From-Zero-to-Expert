@@ -305,14 +305,15 @@ const khalid = {
     return this.age;
   },
   getSummary: function () {
-    this.getSummary = `${this.firstNames} is a ${2024 - this.birthYear} ${
+    console.log("test");
+    this.getSummary = `${this.firstName} is a ${2024 - this.birthYear} ${
       this.job
     } if he has a drive license ${this.hasDriversLicense}`;
 
     return this.getSummary;
   },
 };
-console.log(getSummary());
+console.log(khalid.getSummary());
 console.log(khalid.calcAge());
 // console.log(khalid.age);
 // console.log(khalid.age);
