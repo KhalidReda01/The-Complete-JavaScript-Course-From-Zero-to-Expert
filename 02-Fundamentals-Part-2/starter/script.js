@@ -263,11 +263,12 @@ let tip;
 
 console.log(tip);
 function calTip(bill) {
-  if (bill >= 50 && bill <= 300) {
-    return (tip = 0.15 * bill);
-  } else {
-    return (tip = 0.2 * bill);
-  }
+  // if (bill >= 50 && bill <= 300) {
+  //   return (tip = 0.15 * bill);
+  // } else {
+  //   return (tip = 0.2 * bill);
+  // }
+  return bill >= 50 && bill <= 300 ? (tip = 0.15 * bill) : (tip = 0.2 * bill);
 }
 
 // const bills = [100, 200, 300, 400];
