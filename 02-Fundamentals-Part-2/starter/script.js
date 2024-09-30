@@ -269,4 +269,10 @@ function calTip(bill) {
     return (tip = 0.2 * bill);
   }
 }
-calTip(350);
+
+// const bills = [100, 200, 300, 400];
+const bills = [125, 55, 44, 400];
+const tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
+console.log(calTip(bills[2]));
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(total);
