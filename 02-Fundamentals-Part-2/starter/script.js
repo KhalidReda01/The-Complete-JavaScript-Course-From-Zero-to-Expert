@@ -304,12 +304,23 @@ const khalid = {
     this.age = 2024 - this.birthYear;
     return this.age;
   },
+  getSummary: function () {
+    this.getSummary = `${this.firstNames} is a ${2024 - this.birthYear} ${
+      this.job
+    } if he has a drive license ${this.hasDriversLicense}`;
+
+    return this.getSummary;
+  },
 };
+console.log(getSummary());
 console.log(khalid.calcAge());
-console.log(khalid.age);
-console.log(khalid.age);
-console.log(khalid.age);
-console.log(khalid.age);
+// console.log(khalid.age);
+// console.log(khalid.age);
+// console.log(khalid.age);
+// console.log(khalid.age);
+
+// challenge
+// 'khalid is a 26 years old developer and if he has a driver license'
 // console.log(khalid["calAge"]());
 // const calAge= function (birthYear) {
 //   return 2022 - birthYear;
@@ -341,5 +352,7 @@ console.log(khalid.age);
 // Challenge
 // Khalid has 3 friend and his best friend is called Ahmed
 
-const challenge = `${khalid.firstName} has  ${khalid.friends.length} friends and his best friend is called  ${khalid.friends[1]}`;
-console.log(challenge);
+// const challenge = `${khalid.firstName} has  ${khalid.friends.length} friends and his best friend is called  ${khalid.friends[1]}`;
+// console.log(challenge);
+
+//
