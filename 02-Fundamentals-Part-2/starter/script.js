@@ -148,16 +148,18 @@ const khalid = {
     console.log(this);
     return (this.age = 2024 - this.birthYear);
   },
-  getSummary:(){
-  this.getSummary=`${this.firstName} is a ${this.calcAge()} years old ${this.job} he has ${this.hasDrivingLicense? 'a': 'no'} driver's license`
-  }
-  return this.getSummary
+  getSummary: function () {
+    this.getSummary = `${this.firstName} is a ${this.calcAge()} years old ${
+      this.job
+    } he has ${this.hasDrivingLicense ? "a" : "no"} driver's license`;
+    return this.getSummary;
+  },
 };
 console.log(khalid.calcAge());
 console.log(khalid.calcAge());
 console.log(khalid.calcAge());
 console.log(khalid.calcAge());
-console.log(khalid.getSummary())
+console.log(khalid.getSummary());
 // const nameKey = "Name";
 // console.log(khalid["first" + nameKey]);
 // // dot notation vs Brakcet notation
