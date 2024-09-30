@@ -1,4 +1,4 @@
-# Lecture 14 Object Methods
+# Lecture 14 Object Methods 
 
 ```js
 const khalid = {
@@ -8,10 +8,11 @@ const khalid = {
   job: "Developer",
   friends: ["Ibrahim", "Ahmed", "Micael"],
   hasDriversLicense: true,
-  // calAge: function (birthYear) {
-  //   return 2024 - birthYear;
-  // },
-  hasDriversLicense: true,
+  /* calAge: function (birthYear) {
+    return 2024 - birthYear;
+  },
+  */
+  //hasDriversLicense: true,
   // calAge: function () {
   //   console.log(this);
   //   return 2024 - this.birthYear;
