@@ -298,3 +298,9 @@ console.log(khalid["lastName"]);
 const nameKey = "Name";
 console.log(khalid["first" + nameKey]);
 console.log(khalid["last" + nameKey]);
+// dot notaiton use final property name
+// bracket notation vs .notation
+const interestedIn = prompt(
+  "what do you want to know about Khalid ? chose between firstName,lastName,age,job,friends"
+);
+console.log(khalid[interestedIn]);
