@@ -134,32 +134,32 @@
 // console.log(friends.indexOf("Ahmed"));
 // console.log(friends.includes("Ahmed"));
 
-const khalid = {
-  firstName: "khalid",
-  lastName: "reda",
-  birthYear: 1998,
-  job: "Developer",
-  hasDrivingLicense: true,
-  friends: ["Ibrahim", "Ahmed", "Micael"],
-  // calcAge: function () {
-  //   return 2024 - this.birthYear;
-  // },
-  calcAge: function () {
-    console.log(this);
-    return (this.age = 2024 - this.birthYear);
-  },
-  getSummary: function () {
-    this.getSummary = `${this.firstName} is a ${this.calcAge()} years old ${
-      this.job
-    } he has ${this.hasDrivingLicense ? "a" : "no"} driver's license`;
-    return this.getSummary;
-  },
-};
-console.log(khalid.calcAge());
-console.log(khalid.calcAge());
-console.log(khalid.calcAge());
-console.log(khalid.calcAge());
-console.log(khalid.getSummary());
+// const khalid = {
+//   firstName: "khalid",
+//   lastName: "reda",
+//   birthYear: 1998,
+//   job: "Developer",
+//   hasDrivingLicense: true,
+//   friends: ["Ibrahim", "Ahmed", "Micael"],
+//   // calcAge: function () {
+//   //   return 2024 - this.birthYear;
+//   // },
+//   calcAge: function () {
+//     console.log(this);
+//     return (this.age = 2024 - this.birthYear);
+//   },
+//   getSummary: function () {
+//     this.getSummary = `${this.firstName} is a ${this.calcAge()} years old ${
+//       this.job
+//     } he has ${this.hasDrivingLicense ? "a" : "no"} driver's license`;
+//     return this.getSummary;
+//   },
+// };
+// console.log(khalid.calcAge());
+// console.log(khalid.calcAge());
+// console.log(khalid.calcAge());
+// console.log(khalid.calcAge());
+// console.log(khalid.getSummary());
 // const nameKey = "Name";
 // console.log(khalid["first" + nameKey]);
 // // dot notation vs Brakcet notation
@@ -184,7 +184,43 @@ console.log(khalid.getSummary());
 /**
  * Lecture 16 Iteration for loop
  */
-// for loop keeps running while condition is true
-for (let rep = 1; rep <= 10; rep++) {
-  console.log("Lifting weight repetiaion" + rep);
+// // for loop keeps running while condition is true
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log("Lifting weight repetiaion" + rep);
+// }
+const khalid = [
+  "khalid",
+  "reda",
+  2024 - 1998,
+  "teacher",
+  ["Ibrahim", "ahmed", "micael"],
+  true,
+];
+let type = [];
+console.log(khalid);
+// for (let i = 0; i < khalid.length; i++) {
+//   console.log(typeof khalid[i]);
+//   // type[i] = typeof khalid[i];
+//   type.push(khalid[i]);
+//   console.log(khalid[i]);
+// }
+// console.log(type);
+// let ages = [];
+// const years = [1991, 2007, 1969, 2020];
+// for (let i = 0; i < years.length; i++) {
+//   ages[i] = 2024 - years[i];
+// }
+// console.log(ages);
+
+// continue means exit the current iteration to the next one
+// break terminate the whole iteration
+console.log("------only strings---");
+for (let i = 0; i < khalid.length; i++) {
+  if (typeof khalid[i] !== "string") continue;
+  console.log(khalid[i], typeof khalid[i]);
+}
+console.log("------number---");
+for (let i = 0; i < khalid.length; i++) {
+  if (typeof khalid[i] === "number") break;
+  console.log(khalid[i], typeof khalid[i]);
 }
