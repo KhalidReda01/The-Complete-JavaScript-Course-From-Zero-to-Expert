@@ -174,8 +174,25 @@ const khalid = [
   true,
 ];
 let types = [];
+// for (let i = 0; i < khalid.length; i++) {
+//   types.push(typeof khalid[i]);
+//   console.log();
+// }
+// let years = [1998, 2000, 2002, 2020];
+// let ages = [];
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2024 - years[i]);
+// }
+// console.log(ages);
+// continue exit the current iteration
+
+// for (let i = 0; i < khalid.length; i++) {
+//   if (typeof khalid[i] !== "string")continue;
+//   types.push(typeof khalid[i]);
+//   console.log(types);
+// }
 for (let i = 0; i < khalid.length; i++) {
+  if (typeof khalid[i] === "number") break;
   types.push(typeof khalid[i]);
-  console.log();
+  console.log(types);
 }
-console.log(types);
