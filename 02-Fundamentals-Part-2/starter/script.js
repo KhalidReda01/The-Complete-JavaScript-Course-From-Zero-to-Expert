@@ -426,7 +426,10 @@ const khalidArray = [
 ];
 let types = [];
 for (let i = 0; i < khalidArray.length; i++) {
-  types = [typeof khalidArray[i]];
+  // types = [typeof khalidArray[i]];
+  // reading from jonas array
   console.log(khalidArray[i], typeof khalidArray[i]);
+  // filling types array
+  types[i] = typeof khalidArray[i];
 }
 console.log(types);
