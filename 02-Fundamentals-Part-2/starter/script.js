@@ -422,8 +422,11 @@ const khalidArray = [
   2024 - 1998,
   "teacher",
   ["Ibrahim", "ahmed", "micael"],
+  true,
 ];
-
+let types = [];
 for (let i = 0; i < khalidArray.length; i++) {
-  console.log(khalidArray[i]);
+  types = [typeof khalidArray[i]];
+  console.log(khalidArray[i], typeof khalidArray[i]);
 }
+console.log(types);
