@@ -409,6 +409,21 @@ Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 // console.log("Lifting weight repetation 8");
 // console.log("Lifting weight repetation 9");
 // for loop keeps running while conditon is true
-for (let rep = 1; rep <= 30; rep++) {
-  console.log("lifting weight repetitinon " + rep);
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log("lifting weight repetitinon " + rep);
+// }
+
+/**
+ * Lecture 17 Looping Arrays Breaking and Continuing
+ */
+const khalidArray = [
+  "khalid",
+  "reda",
+  2024 - 1998,
+  "teacher",
+  ["Ibrahim", "ahmed", "micael"],
+];
+
+for (let i = 0; i < khalidArray.length; i++) {
+  console.log(khalidArray[i]);
 }
