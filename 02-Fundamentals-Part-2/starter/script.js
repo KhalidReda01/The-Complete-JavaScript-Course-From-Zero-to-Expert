@@ -165,15 +165,15 @@
 /**
  * Lecture 17 Looping Arrays Breaking and Continuing
  */
-const khalid = [
-  "khalid",
-  "reda",
-  2024 - 1998,
-  "teacher",
-  ["Ibrahim", "ahmed", "micael"],
-  true,
-];
-let types = [];
+// const khalid = [
+//   "khalid",
+//   "reda",
+//   2024 - 1998,
+//   "teacher",
+//   ["Ibrahim", "ahmed", "micael"],
+//   true,
+// ];
+// let types = [];
 // for (let i = 0; i < khalid.length; i++) {
 //   types.push(typeof khalid[i]);
 //   console.log();
@@ -191,8 +191,29 @@ let types = [];
 //   types.push(typeof khalid[i]);
 //   console.log(types);
 // }
-for (let i = 0; i < khalid.length; i++) {
-  if (typeof khalid[i] === "number") break;
-  types.push(typeof khalid[i]);
-  console.log(types);
+// for (let i = 0; i < khalid.length; i++) {
+//   if (typeof khalid[i] === "number") break;
+//   types.push(typeof khalid[i]);
+//   console.log(types);
+// }
+// backwards the arrya
+
+const khalid = [
+  "khalid",
+  "reda",
+  2024 - 1998,
+  "teacher",
+  ["Ibrahim", "ahmed", "micael"],
+  true,
+];
+
+// for (let i = khalid.length - 1; i >= 0; i--) {
+//   console.log(i, khalid[i]);
+// }
+
+for (let excersie = 1; excersie < 4; excersie++) {
+  console.log(`__________excercise${excersie}_______`);
+  for (let rep = 1; rep < 5; rep++) {
+    console.log(`lifting weight number ${rep}`);
+  }
 }
