@@ -5,6 +5,7 @@
 /**
  * Lecture 17 Looping Arrays Breaking and Continuing
  */
+// here we have a normal array 
 const khalidArray = [
   "khalid",
   "reda",
@@ -13,16 +14,18 @@ const khalidArray = [
   ["Ibrahim", "ahmed", "micael"],
   true,
 ];
+// here we create an empty array to store the types of khalid array 
 let types = [];
+// here we have an iteration for loop start and end according to the khalid array length
 for (let i = 0; i < khalidArray.length; i++) {
-  // reading from jonas array
+  // reading from khalid array
   console.log(khalidArray[i], typeof khalidArray[i]);
   // filling types array
   // types[i] = typeof khalidArray[i];
   types.push(typeof khalidArray[0]);
 }
 console.log(types);
-
+// here we have a years array birth year and what to have one for ages accoring to it
 const years = [1991, 2007, 1969, 2020];
 let ages = [];
 for (let i = 0; i < years.length; i++) {
@@ -30,8 +33,8 @@ for (let i = 0; i < years.length; i++) {
 }
 console.log(ages);
 
-// continue and break
-// continue is to exit the iteration of the loop and continue to the next one
+// continue and break this is the hard confusing one at first 
+// continue is to exit the current iteration of the loop and continue to the next one
 // break is used to completely terminate the whole loop
 console.log("--- only Stirngs ---");
 for (let i = 0; i < khalidArray.length; i++) {
