@@ -173,9 +173,9 @@ const khalid = [
   ["Ibrahim", "ahmed", "micael"],
   true,
 ];
-let types;
+let types = [];
 for (let i = 0; i < khalid.length; i++) {
-  types[i] = typeof khalid[i];
-  console.log(khalid[i]);
+  types.push(typeof khalid[i]);
+  console.log();
 }
 console.log(types);
