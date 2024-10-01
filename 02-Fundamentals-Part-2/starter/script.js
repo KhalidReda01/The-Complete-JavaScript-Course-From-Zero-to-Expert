@@ -124,18 +124,31 @@ console: 'Probably not a central European country :D'
 index of the country in the 'neighbours' array, and then use that index to
 change the array at that index position. For example, you can search for
 'Sweden' in the array, and then replace it with 'Republic of Sweden'. */
-const neighbours = ["Sudan", "Libya", "Palestine", "saudi", "Turkey"];
-console.log(neighbours);
-neighbours.push("Utopia");
-console.log(neighbours);
-neighbours.pop();
-console.log(neighbours);
-if (!neighbours.includes("Germany")) {
-  console.log("Probably not a central Europian Country");
-}
+// const neighbours = ["Sudan", "Libya", "Palestine", "saudi", "Turkey"];
+// console.log(neighbours);
+// neighbours.push("Utopia");
+// console.log(neighbours);
+// neighbours.pop();
+// console.log(neighbours);
+// if (!neighbours.includes("Germany")) {
+//   console.log("Probably not a central Europian Country");
+// }
 
-neighbours.indexOf("Sudan");
-console.log(neighbours.indexOf("Sudan"));
-// neighbours[0] = "Lebneon";
-neighbours[neighbours.indexOf("Sudan")] = "Lebneon";
-console.log(neighbours);
+// neighbours.indexOf("Sudan");
+// console.log(neighbours.indexOf("Sudan"));
+// // neighbours[0] = "Lebneon";
+// neighbours[neighbours.indexOf("Sudan")] = "Lebneon";
+// console.log(neighbours);
+
+/**Lecture Introduction to Ojbect
+ *Create an object called 'myCountry' for a country of your choice, containing properties 'country', 'capital', 'language', 'population' and 
+'neighbours' (an array like we used in previous assignments)
+ */
+
+const myCountry = {
+  country: "Egypt",
+  capital: "cairo",
+  language: "Arabic",
+  population: 120,
+  neighbours: ["sudan", "libya", "saudi", "palestine", "Turkey", "Lebnon"],
+};
