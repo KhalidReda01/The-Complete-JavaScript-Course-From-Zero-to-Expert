@@ -159,6 +159,23 @@
 //   console.log("plese write a proper value choose a propper one");
 // }
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`gem biceps repetiation${rep}`);
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`gem biceps repetiation${rep}`);
+// }
+/**
+ * Lecture 17 Looping Arrays Breaking and Continuing
+ */
+const khalid = [
+  "khalid",
+  "reda",
+  2024 - 1998,
+  "teacher",
+  ["Ibrahim", "ahmed", "micael"],
+  true,
+];
+let types;
+for (let i = 0; i < khalid.length; i++) {
+  types[i] = typeof khalid[i];
+  console.log(khalid[i]);
 }
+console.log(types);
