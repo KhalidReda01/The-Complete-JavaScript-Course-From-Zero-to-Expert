@@ -458,22 +458,36 @@ Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 /**
  *lecture 18 Looping Backwards and loops in loops
  */
-const khalid = [
-  "khalid",
-  "reda",
-  2024 - 1998,
-  "teacher",
-  ["Ibrahim", "ahmed", "micael"],
-];
+// const khalid = [
+//   "khalid",
+//   "reda",
+//   2024 - 1998,
+//   "teacher",
+//   ["Ibrahim", "ahmed", "micael"],
+// ];
 // 0,1,...,4
-// 4,3,...,0
-for (let i = khalid.length - 1; i >= 0; i--) {
-  console.log(i, khalid[i]);
-}
+// // 4,3,...,0
+// for (let i = khalid.length - 1; i >= 0; i--) {
+//   console.log(i, khalid[i]);
+// }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`-----starting excercise${exercise}`);
-  for (let rep = 1; rep < 6; rep++) {
-    console.log(`Lifting weight repetion ${rep}`);
-  }
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`-----starting excercise${exercise}`);
+// for (let rep = 1; rep < 6; rep++) {
+//   console.log(`Lifting weight repetion ${rep}`);
+// }
+// }
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weight repetion ${rep}`);
+}
+let rep = 1;
+while (rep <= 10) {
+  console.log("hello world " + rep);
+  rep++;
+}
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+while (dice !== 6) {
+  console.assert.log(`you rolled a ${dice}`);
 }
