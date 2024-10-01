@@ -188,16 +188,16 @@
 // for (let rep = 1; rep <= 10; rep++) {
 //   console.log("Lifting weight repetiaion" + rep);
 // }
-const khalid = [
-  "khalid",
-  "reda",
-  2024 - 1998,
-  "teacher",
-  ["Ibrahim", "ahmed", "micael"],
-  true,
-];
-let type = [];
-console.log(khalid);
+// const khalid = [
+//   "khalid",
+//   "reda",
+//   2024 - 1998,
+//   "teacher",
+//   ["Ibrahim", "ahmed", "micael"],
+//   true,
+// ];
+// let type = [];
+// console.log(khalid);
 // for (let i = 0; i < khalid.length; i++) {
 //   console.log(typeof khalid[i]);
 //   // type[i] = typeof khalid[i];
@@ -214,13 +214,34 @@ console.log(khalid);
 
 // continue means exit the current iteration to the next one
 // break terminate the whole iteration
-console.log("------only strings---");
-for (let i = 0; i < khalid.length; i++) {
-  if (typeof khalid[i] !== "string") continue;
-  console.log(khalid[i], typeof khalid[i]);
+// console.log("------only strings---");
+// for (let i = 0; i < khalid.length; i++) {
+//   if (typeof khalid[i] !== "string") continue;
+//   console.log(khalid[i], typeof khalid[i]);
+// }
+// console.log("------number---");
+// for (let i = 0; i < khalid.length; i++) {
+//   if (typeof khalid[i] === "number") break;
+//   console.log(khalid[i], typeof khalid[i]);
+// }
+
+/**Lecture 18 Looping Backwards and loops in loops */
+
+const khalid = [
+  "khalid",
+  "reda",
+  2024 - 1998,
+  "teacher",
+  ["Ibrahim", "ahmed", "micael"],
+];
+for (let i = khalid.length - 1; i >= 0; i--) {
+  console.log(i, khalid[i]);
 }
-console.log("------number---");
-for (let i = 0; i < khalid.length; i++) {
-  if (typeof khalid[i] === "number") break;
-  console.log(khalid[i], typeof khalid[i]);
+
+// loop inside loop
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`--------- starting excercise ${[exercise]}`);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Lifting weight repetion ${rep}`);
+  }
 }
