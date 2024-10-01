@@ -285,36 +285,36 @@ Test data: 125, 555 and 44
 //   "teacher",
 //   ["Ibrahim", "ahmed", "micael"],
 // ];
-const khalid = {
-  firstName: "khalid",
-  lastName: "Reda",
-  birthYear: 1998,
-  job: "Developer",
-  friends: ["Ibrahim", "Ahmed", "Micael"],
-  hasDriversLicense: true,
-  // calAge: function (birthYear) {
-  //   return 2024 - birthYear;
-  // },
-  hasDriversLicense: true,
-  // calAge: function () {
-  //   console.log(this);
-  //   return 2024 - this.birthYear;
-  // },
-  calcAge: function () {
-    this.age = 2024 - this.birthYear;
-    return this.age;
-  },
-  getSummary: function () {
-    console.log("test");
-    this.getSummary = `${this.firstName} is a ${this.calcAge()} years old ${
-      this.job
-    } he has ${this.hasDriversLicense ? "a" : "no"} drivers's license`;
+// const khalid = {
+//   firstName: "khalid",
+//   lastName: "Reda",
+//   birthYear: 1998,
+//   job: "Developer",
+//   friends: ["Ibrahim", "Ahmed", "Micael"],
+//   hasDriversLicense: true,
+//   // calAge: function (birthYear) {
+//   //   return 2024 - birthYear;
+//   // },
+//   hasDriversLicense: true,
+//   // calAge: function () {
+//   //   console.log(this);
+//   //   return 2024 - this.birthYear;
+//   // },
+//   calcAge: function () {
+//     this.age = 2024 - this.birthYear;
+//     return this.age;
+//   },
+//   getSummary: function () {
+//     console.log("test");
+//     this.getSummary = `${this.firstName} is a ${this.calcAge()} years old ${
+//       this.job
+//     } he has ${this.hasDriversLicense ? "a" : "no"} drivers's license`;
 
-    return this.getSummary;
-  },
-};
-console.log(khalid.getSummary());
-console.log(khalid.calcAge());
+//     return this.getSummary;
+//   },
+// };
+// console.log(khalid.getSummary());
+// console.log(khalid.calcAge());
 // console.log(khalid.age);
 // console.log(khalid.age);
 // console.log(khalid.age);
@@ -356,4 +356,41 @@ console.log(khalid.calcAge());
 // const challenge = `${khalid.firstName} has  ${khalid.friends.length} friends and his best friend is called  ${khalid.friends[1]}`;
 // console.log(challenge);
 
-//
+/**Lecture 15 Coding Challenge #3
+ *
+ *Coding Challenge #3
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+Your tasks:
+1.  For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+2.  Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method
+3.  Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+ *
+ *
+ */
+
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    return (this.BMI = this.mass / this.height ** 2);
+  },
+};
+const john = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    return (this.BMI = this.mass / this.height ** 2);
+  },
+};
+console.log(mark.calcBMI());
+console.log(mark.BMI);
+console.log(john.calcBMI());
+console.log(john.BMI);
+const result =
+  mark.BMI > john.BMI
+    ? `mark has ${mark.BMI} higher BMI than${john.BMI} john`
+    : `JOhn has ${john.BMI} higher BMI than ${mark.BMI} mark`;
+console.log(result);
