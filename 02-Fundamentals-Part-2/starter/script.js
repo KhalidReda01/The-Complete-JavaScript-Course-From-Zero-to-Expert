@@ -369,28 +369,46 @@ Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
  *
  */
 
-const mark = {
-  fullName: "Mark Miller",
-  mass: 78,
-  height: 1.69,
-  calcBMI: function () {
-    return (this.BMI = this.mass / this.height ** 2);
-  },
-};
-const john = {
-  fullName: "John Smith",
-  mass: 92,
-  height: 1.95,
-  calcBMI: function () {
-    return (this.BMI = this.mass / this.height ** 2);
-  },
-};
-console.log(mark.calcBMI());
-console.log(mark.BMI);
-console.log(john.calcBMI());
-console.log(john.BMI);
-const result =
-  mark.BMI > john.BMI
-    ? `mark has ${mark.BMI} higher BMI than${john.BMI} john`
-    : `JOhn has ${john.BMI} higher BMI than ${mark.BMI} mark`;
-console.log(result);
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     return (this.BMI = this.mass / this.height ** 2);
+//   },
+// };
+// const john = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     return (this.BMI = this.mass / this.height ** 2);
+//   },
+// };
+// console.log(mark.calcBMI());
+// console.log(mark.BMI);
+// console.log(john.calcBMI());
+// console.log(john.BMI);
+// const result =
+//   mark.BMI > john.BMI
+//     ? `${mark.fullName} has ${mark.BMI} higher BMI than${john.BMI} ${john.fullName}`
+//     : `${john.fullName} has ${john.BMI} higher BMI than ${mark.BMI} ${mark.fullName}`;
+// console.log(result);
+
+/***
+ * Lecture Iteration the For loop
+ */
+
+// console.log("Lifting weight repetition 1");
+// console.log("Lifting weight repetation 2");
+// console.log("Lifting weight repetation 3");
+// console.log("Lifting weight repetation 4");
+// console.log("Lifting weight repetition 5");
+// console.log("Lifting weight repetation 6");
+// console.log("Lifting weight repetation 7");
+// console.log("Lifting weight repetation 8");
+// console.log("Lifting weight repetation 9");
+// for loop keeps running while conditon is true
+for (let rep = 1; rep <= 30; rep++) {
+  console.log("lifting weight repetitinon " + rep);
+}
