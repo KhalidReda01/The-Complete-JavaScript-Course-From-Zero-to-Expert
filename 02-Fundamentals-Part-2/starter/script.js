@@ -184,3 +184,11 @@ console.log(myCountry.isIland);
 3.  Add a method called 'checkIsland' to the 'myCountry' object. This method will set a new property on the object, called 'isIsland'. 
 'isIsland' will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property
  */
+/**
+ * Lecture 16 assignment
+ *LECTURE: Iteration: The for Loop
+1.  There are elections in your country! In a small town, there are only 50 voters. Use a for loop to simulate the 50 people voting, by logging a string like this to the console (for numbers 1 to 50): 'Voter number 1 is currently voting'
+ */
+for (let vote = 1; vote <= 50; vote++) {
+  console.log(`number ${vote} is currently voting`);
+}
