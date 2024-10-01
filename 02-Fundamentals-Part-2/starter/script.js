@@ -227,21 +227,39 @@
 
 /**Lecture 18 Looping Backwards and loops in loops */
 
-const khalid = [
-  "khalid",
-  "reda",
-  2024 - 1998,
-  "teacher",
-  ["Ibrahim", "ahmed", "micael"],
-];
-for (let i = khalid.length - 1; i >= 0; i--) {
-  console.log(i, khalid[i]);
+// const khalid = [
+//   "khalid",
+//   "reda",
+//   2024 - 1998,
+//   "teacher",
+//   ["Ibrahim", "ahmed", "micael"],
+// ];
+// for (let i = khalid.length - 1; i >= 0; i--) {
+//   console.log(i, khalid[i]);
+// }
+
+// // loop inside loop
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`--------- starting excercise ${[exercise]}`);
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Lifting weight repetion ${rep}`);
+//   }
+// }
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weight repetition ${rep}`);
 }
 
-// loop inside loop
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`--------- starting excercise ${[exercise]}`);
-  for (let rep = 1; rep < 6; rep++) {
-    console.log(`Lifting weight repetion ${rep}`);
-  }
+let rep = 1;
+while (rep <= 10) {
+  console.log(` While Lifting weight repetion ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+while (dice !== 6) {
+  console.log(`you rolleed a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("loop is about to end");
 }
