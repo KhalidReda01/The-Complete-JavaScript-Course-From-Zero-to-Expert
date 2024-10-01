@@ -426,7 +426,6 @@ const khalidArray = [
 ];
 let types = [];
 for (let i = 0; i < khalidArray.length; i++) {
-  // types = [typeof khalidArray[i]];
   // reading from jonas array
   console.log(khalidArray[i], typeof khalidArray[i]);
   // filling types array
@@ -434,3 +433,10 @@ for (let i = 0; i < khalidArray.length; i++) {
   types.push(typeof khalidArray[0]);
 }
 console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+let ages = [];
+for (let i = 0; i < years.length; i++) {
+  ages.push(2024 - years[i]);
+}
+console.log(ages);
