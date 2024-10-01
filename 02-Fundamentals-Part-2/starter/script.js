@@ -180,3 +180,11 @@ console.log(khalid.getSummary());
 // console.log(
 //   `${khalid.firstName} has a ${khalid.friends.length} friends nand his best friend is ${khalid.friends[0]}`
 // );
+
+/**
+ * Lecture 16 Iteration for loop
+ */
+// for loop keeps running while condition is true
+for (let rep = 1; rep <= 10; rep++) {
+  console.log("Lifting weight repetiaion" + rep);
+}
