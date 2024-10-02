@@ -37,8 +37,5 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.message').textContent = 'YOu lost the game';
       document.querySelector('.score').textContent = 0;
     }
-    document.querySelector('.message').textContent = 'Too low!📉';
-    score--;
-    document.querySelector('.score').textContent = score;
   }
 });
