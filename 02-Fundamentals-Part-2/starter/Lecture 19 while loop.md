@@ -42,4 +42,3 @@ while (dice !== 6) {
 -  Math.random(): number
 
   Returns a pseudorandom number between 0 and 1.
-
