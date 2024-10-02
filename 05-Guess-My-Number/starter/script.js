@@ -19,5 +19,25 @@ document.querySelector('.check').addEventListener('click', function () {
     // when there  is no input
     document.querySelector('.message').textContent = ' NO number';
     // when player wins
+  } else if (guess === secretNumber) {
+    document.querySelector('.message').textContent = 'Correct Number';
+
+    document.querySelector('.score').textContent = score;
+  } else if (guess > secretNumber) {
+    if (score > 1) {
+      score--;
+      document.querySelector('.message').textContent = 'too high 📈';
+      document.querySelector('.score').textContent = score;
+    } else {
+      document.querySelector('.message').textContent = 'you lost the game';
+    }
+  } else if (guess < secretNumber) {
+    if (score > 1) {
+      score--;
+      document.querySelector('.score').textContent = score;
+      document.querySelector('.message').textContent = 'too low 📈';
+    } else {
+      document.querySelector('.message').textContent = 'you lost the game';
+    }
   }
 });
