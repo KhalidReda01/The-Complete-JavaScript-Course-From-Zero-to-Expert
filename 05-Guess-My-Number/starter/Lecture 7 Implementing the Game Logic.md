@@ -119,8 +119,8 @@ Overview of Lecture 7: Implementing the Game Logic
 
         Example:
 
-        ```
-        javascriptCopy codedocument.querySelector('.again').addEventListener('click', function () {
+        ```js
+        document.querySelector('.again').addEventListener('click', function () {
             score = 20; // Reset score
             secretNumber = Math.trunc(Math.random() * 20) + 1; // Generate new secret number
             // Reset messages and UI elements
