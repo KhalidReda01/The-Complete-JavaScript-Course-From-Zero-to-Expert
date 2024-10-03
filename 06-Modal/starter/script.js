@@ -23,5 +23,6 @@ btnCloseModal.addEventListener('click', closeModal);
 overLay.addEventListener('click', closeModal);
 
 document.addEventListener('keydown', function (e) {
-  console.log('A key was pressed');
+  console.log(e.key);
+  if (e.key === 'Escape') console.log('Esc was pressed');
 });
