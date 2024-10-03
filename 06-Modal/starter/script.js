@@ -11,6 +11,12 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
       console.log('button clicked');
       modal.classList.remove('hidden');
       overLay.classList.remove('hidden');
+      // modal.style.display='block';
     })
   );
 }
+
+btnCloseModal.addEventListener('click', function () {
+  modal.classList.add('hidden');
+  overLay.classList.add('hidden');
+});
