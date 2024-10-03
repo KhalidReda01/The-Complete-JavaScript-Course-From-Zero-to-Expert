@@ -31,7 +31,17 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.highscore').textContent = highScore;
     }
 
-    // when gess is too high
+    // when guess  is wrong
+  } else if (guess !== secretNumber) {
+    if (score > 1) {
+      score--;
+      document.querySelector('.score').textContent = score;
+      document.querySelector('.message').textContent = 'Too high!📈';
+    } else {
+      document.querySelector('.message').textContent = 'YOu lost the game';
+      document.querySelector('.score').textContent = 0;
+    }
+    // when guess  is too high
   } else if (guess > secretNumber) {
     if (score > 1) {
       score--;
