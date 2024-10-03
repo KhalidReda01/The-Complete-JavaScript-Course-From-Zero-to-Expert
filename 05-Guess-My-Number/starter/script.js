@@ -20,7 +20,7 @@ document.querySelector('.check').addEventListener('click', function () {
     displayMessage('No number');
     // guess not equal to secret Number
   } else if (guess === secretNumber) {
-    document.querySelector('.message').textContent = 'YOu win the Game';
+    displayMessage('YOu win the Game');
     document.querySelector('.number').textContent = secretNumber;
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
@@ -33,7 +33,7 @@ document.querySelector('.check').addEventListener('click', function () {
       score--;
       console.log(score);
       document.querySelector('.score').textContent = score;
-      displayMessage(uess > secretNumber ? 'Too high📈' : 'Too low📈');
+      displayMessage(guess > secretNumber ? 'Too high📈' : 'Too low📈');
     } else {
       displayMessage('you lost the game');
       document.querySelector('.score').textContent = 0;
